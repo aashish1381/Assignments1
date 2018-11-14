@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+	</title>
+
+</head>
+
+<script>
+
+	//function validateEmail(email) {
+    //var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    //return re.test(String(email).toLowerCase());
+
+
+
+	function validateForm(){
+	
+	
+		var username = document.getElementById("username").value;
+
+		if(username == "" || username == null){
+			document.getElementById("msg").innerHTML = "username required";
+			
+			return false;
+		}
+
+	
+	
+		var email = document.getElementById("email").value;
+		
+		if(email != "" || email == null){
+			document.getElementById("em").innerHTML = "Enter a valid email id";
+			return false;
+			
+		}
+	
+		//if(validateEmail(email){
+			//document.getElementById("yes").innerHTML = "Right";
+		//}
+		
+		//else{
+			//document.getElementById("em").innerHTML = "wrong";
+	
+		
+		
+		
+	
+			
+		 
+		  
+		 
+		 //else if(username != "" || username != null){
+			//document.getElementById("right").innerHTML = "Valid username";
+			//return false;
+		 
+		
+			
+		//}
+			
+		 //function validateEmail(){
+		 
+		
+		
+		//email = email.match(eek/gi);
+		
+		
+		
+		}
+</script>
+		
+
+<body>
+	<h1 align="center"> Sample Form</h1>
+	
+	
+	<div align="center">
+	<form action = "" onsubmit="return validateForm()" onsubmit="myButton.disabled = true; return true;">
+	
+		<table>
+		<tr>
+			 <td><label> Username</label></td><td><input type="text" id="username"></td>
+			 <td><div id="msg" style="color:red"></div></td>
+
+	</tr>
+		<tr>
+			 <td><label> First Name</label></td><td><input type="text" id="firstname"></td>
+		</tr>
+		<tr>
+			 <td><label> Last Name</label> </td><td><input type="text" id="lastname"></td>
+		</tr>
+		<tr>
+			 <td><label> Email</label></td><td><input type="email" id="email"></td>
+			 <td><div id="em" style="color:red"></div></td>
+		</tr>
+		<tr>
+			 <td><input type="submit" name="myButton" value="REGISTER"></td>
+		</tr>
+		</table>
+			
+	</form>
+	</div>
+		
